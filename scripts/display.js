@@ -50,4 +50,21 @@ $(function () {
             $("#pinkbox").fadeTo(1000,1);
         }
     })    
+
+    // div aanmaken en koppelen aan constante
+    const newBox = $("<div>"); // in gewone javascript document.createElement("div")
+    // id instellen voor nieuwe div via .attr()
+    newBox.attr("id","purplebox");
+    // kleur instellen
+    newBox.css("background-color","purple");
+    // hoogte instellen div
+    newBox.css("height","85px");
+    // width instellen div
+    newBox.css("width","85px");
+    // tekst toevoegen aan div
+    newBox.text("Purple");
+    console.log(newBox);
+    // box toevoegen aan newdiv element
+    $("#newdiv").append(newBox);
+
 })
